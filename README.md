@@ -59,7 +59,7 @@ This website was created to:
 1. **Clone the project**
 
    ```bash
-   git clone <your-repo-url>
+   git clone <https://github.com/Dayoxx/RCCG-Peace-Palace-Parish>
    ```
 
 2. **Host on your preferred platform**
