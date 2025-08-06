@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>RCCG Peace Palace Parish</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo-home">
+      <img src="pics/Rccg_logo.png" alt="RCCG Peace Palace Parish Logo" class="nav-logo" />
+    </a>
+    <nav>
+      <a href="departments.html">Departments</a>
+      <a href="counsel.html">Counseling</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="vids/backkground.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <br>
+        <img src="pics/Rccg_logo.png" alt="RCCG Peace Palace Parish Logo" class="hero-logo" />
+        <h1>Welcome to RCCG Peace Palace Parish</h1>
+        <p>Experience worship, fellowship, and spiritual growth.<br>
+        Jesus Christ the same yesterday, today, and forever.</p>
+        <a id="sow-a-seed-btn" href="#" class="btn"> Want to Sow a seed and give your offering and tithe? click here </a>
+      </div>
+    </section>
+
+    <div id="bank-details-container" style="display: none;">
+      <div id="bank-details">
+        <h2>Our Bank Details</h2>
+        <p>***Thank you for your generous seed! You can use the account below for your Seed and welfare donations.***</p>
+        
+        <div class="account-details">
+          <h3>RCCG Peace Palace Parish Welfare Account</h3>
+          <h3><strong>Account Name:</strong> RCCG PEACE PALACE PARISH WELFARE</h3>
+          <p><strong>Bank Name:</strong> Zenith Bank</p>
+          <p><strong>Account Number:</strong> 1229746919</p>
+        </div>
+
+        <div class="bible-verse">
+          <p>
+            <strong>Malachi 3:10 (KJV)</strong><br>
+            Bring ye all the tithes into the storehouse, that there may be meat in mine house, and prove me now herewith, saith the Lord of hosts, if I will not open you the windows of heaven, and pour you out a blessing, that there shall not be room enough to receive it.
+          </p>
+        </div>
+        
+        <p>***You can use the account below for your offering and tithe***</p>
+
+        <div class="account-details">
+          <h3>Tithes and Offerings Account</h3>
+          <h3>RCCG Peace Palace Parish</h3>
+          <h3><strong>Account Name:</strong> RCCG PEACE PALACE PARISH</h3>
+          <p><strong>Bank Name:</strong> Zenith Bank</p>
+          <p><strong>Account Number:</strong> 1015249859</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 RCCG Peace Palace Parish | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    document.getElementById("sow-a-seed-btn").addEventListener("click", function(event) {
+      event.preventDefault(); 
+      
+      var container = document.getElementById("bank-details-container");
+      if (container.style.display === "none" || container.style.display === "") {
+        container.style.display = "block";
+      } else {
+        container.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
